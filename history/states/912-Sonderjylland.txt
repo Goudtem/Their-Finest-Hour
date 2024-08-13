@@ -8,7 +8,6 @@ state = {
 	history = {
 		owner = DEN
 		add_core_of = DEN
-		add_core_of = SHL
 		victory_points = {
 			13258 1 
 		}
