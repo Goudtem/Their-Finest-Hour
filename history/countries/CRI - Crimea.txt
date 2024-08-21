@@ -95,6 +95,3 @@ set_popularities = {
 }
 
 
-recruit_character = CRI_ilyas_tarkhan
-
-

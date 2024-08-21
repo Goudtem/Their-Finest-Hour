@@ -10,7 +10,7 @@ state={
 			2096 1 
 		}
 		owner = ENG
-		add_core_of = SUD
+		add_claim_by = EGY
 		buildings = {
 			infrastructure = 2
 
@@ -19,7 +19,7 @@ state={
 	}
 
 	provinces={
-		2016 4033 8052 8084 10739 10795 10827 10851 12744 
+		2016 8084 10795 10827 10851 12744 
 	}
 
 	buildings_max_level_factor=1.000

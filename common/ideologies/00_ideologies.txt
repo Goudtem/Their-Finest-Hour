@@ -13,6 +13,9 @@ ideologies = {
 			socialism = {
 			}
 
+			centrism = {
+			}
+
 			populism = {
 			}
 		}
@@ -131,20 +134,13 @@ ideologies = {
 	fascism = {
 
 		types = {
-
-			nazism = {
+			statism_ideology = {
 			}
 
-			gen_nazism = {
+			left_wing_statism = {
 			}
 
-			fascism_ideology = {
-			}
-
-			falangism = {
-			}
-
-			rexism = {
+			right_wing_statism = {
 			}
 		}
 
@@ -156,7 +152,7 @@ ideologies = {
 			"FACTION_NAME_FASCIST_5"
 		}
 
-		color = { 150 75 0 }
+		color = { 132 39 21 }
 
 		war_impact_on_world_tension = 1.0			#evil!
 		faction_impact_on_world_tension = 1.0
@@ -187,21 +183,21 @@ ideologies = {
 	neutrality = {
 
 		types = {
-
-			despotism  = {
-			}
-
-			oligarchism  = {
-			}
-
-			anarchism = {
+			monarchism = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
-			moderatism = {
+			colonial_government_ideology = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
-			centrism = {
+			oligarchism = {
+			}
+
+			military_dictatorship = {
+			}
+
+			civilian_dictatorship = {
 			}
 		}
 

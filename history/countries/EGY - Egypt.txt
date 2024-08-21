@@ -1,4 +1,5 @@
 ﻿capital = 907
+set_convoys = 20
 
 # Starting tech
 set_technology = {
@@ -15,7 +16,8 @@ if = {
 	}
 }
 
-set_convoys = 20
+# Diplomacy
+give_military_access = ENG
 
 1939.1.1 = {
 

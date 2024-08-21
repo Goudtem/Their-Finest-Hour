@@ -46,7 +46,6 @@ IF = {
 	limit = {
 		has_dlc = "Trial of Allegiance"
 	}
-	recruit_character = CHR_charrua_council
 }
 
 set_politics = {
