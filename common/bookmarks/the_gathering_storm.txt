@@ -1,2 +1,22 @@
 bookmarks = {
+    bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+
+        "USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+			}
+		}
+    }
 }
