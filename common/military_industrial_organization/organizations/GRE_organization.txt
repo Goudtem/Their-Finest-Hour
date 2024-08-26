@@ -17,7 +17,6 @@ GRE_biamax_organization = {
 		has_dlc = "Battle for the Bosporus"
 	}
 	available = {
-		owner = { has_completed_focus = GRE_crack_down_on_foreign_monopolies }
 	}
 }
 ### Foreign Subsidiaries
@@ -154,9 +153,6 @@ GRE_pyrkal_organization = {
 		has_dlc = "Battle for the Bosporus"
 	}
 	available = {
-		owner = {
-			has_completed_focus = GRE_crack_down_on_foreign_monopolies
-		}
 	}
 }
 GRE_petropoulos_organization = {
@@ -167,9 +163,6 @@ GRE_petropoulos_organization = {
 		has_dlc = "Battle for the Bosporus"
 	}
 	available = {
-		owner = {
-			has_completed_focus = GRE_crack_down_on_foreign_monopolies
-		} 
 	}
 }
 ### Foreign Subsidiaries

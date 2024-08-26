@@ -28,12 +28,6 @@ FRA_renault_organization = {
 	}
 
 	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 
 	available = {
@@ -53,16 +47,6 @@ FRA_renault_organization = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_FRA_renault_organization_flag
-				}
-			}
-		}
-		IF = {
-			limit = { FROM = { original_tag = BRA } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
-					has_country_flag = has_renault_mio_flag
 				}
 			}
 		}
@@ -210,16 +194,6 @@ FRA_acf_organization = {
 			}
 			FROM = { NOT = { has_war_with = FRA } }
 		}
-		IF = {
-			limit = { FROM = { original_tag = BRA } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
-					has_country_flag = has_acf_mio_flag
-				}
-			}
-		}
 	}
 }
 
@@ -260,12 +234,6 @@ FRA_bloch_organization = {
 	}
 
 	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {
@@ -285,16 +253,6 @@ FRA_bloch_organization = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_FRA_bloch_organization_flag
-				}
-			}
-		}
-		IF = {
-			limit = { FROM = { original_tag = BRA } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
-					has_country_flag = has_bloch_mio_flag
 				}
 			}
 		}
@@ -408,12 +366,6 @@ FRA_mas_organization = {
 	}
 	
 	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 
 	available = {

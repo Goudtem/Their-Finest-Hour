@@ -1,5 +1,4 @@
-﻿
-add_namespace = generic_debug
+﻿add_namespace = generic_debug
 
 # debug event used for creating agency & cryptology
 country_event = {

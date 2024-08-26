@@ -20,10 +20,7 @@ CHI_sino_german_technical_mission_organization = {
 	}
 	available = {
 		owner = {
-			OR = {
-				has_completed_focus = CHI_chinese_panzers
-				has_idea = german_advisors
-			}
+			has_idea = german_advisors
 			NOT = {
 				has_war_with = GER
 			}
@@ -102,7 +99,6 @@ CHI_camco_medium_organization = {
 		has_dlc = "Waking the Tiger"
 	}
 	available = {
-		owner = { has_completed_focus = CHI_camco }
 	}
 }
 CHI_camco_fighter_organization = {
@@ -116,7 +112,6 @@ CHI_camco_fighter_organization = {
 		has_dlc = "Waking the Tiger"
 	}
 	available = {
-		owner = { has_completed_focus = CHI_local_fighter_production }
 	}
 }
 CHI_camco_bomber_organization = {
@@ -130,7 +125,6 @@ CHI_camco_bomber_organization = {
 		has_dlc = "Waking the Tiger"
 	}
 	available = {
-		owner = { has_completed_focus = CHI_local_bomber_production }
 	}
 }
 

@@ -61,7 +61,6 @@ SWI_eidgenossische_FW_organization = {
 		has_dlc = "By Blood Alone"
 	}
 	available = {
-		owner = { has_completed_focus = SWI_swiss_airplane_designs }
 	}
 }
 

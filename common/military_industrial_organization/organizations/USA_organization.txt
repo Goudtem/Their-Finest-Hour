@@ -28,16 +28,6 @@ USA_marmon_herrington_organization = {
 			}
 			FROM = { NOT = { has_war_with = USA } }
 		}
-		IF = {
-			limit = { FROM = { original_tag = BRA } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
-					has_country_flag = has_marmon_herrington_mio_flag
-				}
-			}
-		}
 	}
 }
 
@@ -71,14 +61,6 @@ USA_chrysler_organization = {
 			}
 			FROM = { is_in_faction_with = USA }
 		} 
-		else_if = {
-			limit = {
-				FROM = { tag = NOR }
-			}
-			FROM = { 
-				has_completed_focus = NOR_invite_transnational_manufacturers
-			}
-		}
 	}
 
 	initial_trait = {
@@ -177,7 +159,6 @@ USA_detroit_arsenal_organization = {
 		tag = USA
 	}
 	available = {
-		FROM = { has_completed_focus = USA_main_battle_tanks }
 	}
 
 	initial_trait = {
@@ -219,7 +200,6 @@ USA_tank_destroyer_board_organization = {
 		tag = USA 
 	}
 	available = {
-		FROM = { has_completed_focus = USA_tank_destroyer_doctrine }
 	}
 	initial_trait = {
 		name = ROM_mio_trait_mobile_tank_destroyers
@@ -411,16 +391,6 @@ USA_newport_news_shipbuilding_organization = {
 			}
 			FROM = { NOT = { has_war_with = USA } }
 		}
-		IF = {
-			limit = { FROM = { original_tag = BRA } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
-					has_country_flag = has_newport_news_shipbuilding_mio_flag
-				}
-			}
-		}
 	}
 
 	initial_trait = {
@@ -487,16 +457,6 @@ USA_north_american_aviation_organization = {
 				FROM = { NOT = { original_tag = USA } }
 			}
 			FROM = { NOT = { has_war_with = USA } }
-		}
-		IF = {
-			limit = { FROM = { original_tag = BRA } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
-					has_country_flag = has_invited_north_american_aviation_mio_flag
-				}
-			}
 		}
 	}
 
@@ -841,30 +801,6 @@ USA_ford_motor_company_organization = {
 		IF = {
 			limit = { FROM = { original_tag = ROM } }
 			FROM = { has_country_flag = USA_mot_chosen }
-		}
-		if = {
-			limit = {
-				FROM = {
-					OR = {
-						original_TAG = LAT
-						original_TAG = LIT
-						original_TAG = EST
-					}
-				}
-			}
-			FROM = {
-				has_completed_focus = BALTIC_ford_motors
-			}
-		}
-		IF = {
-			limit = {
-				FROM = {
-					original_TAG = BRA
-				}
-			}
-			FROM = {
-				has_completed_focus = BRA_expand_fordlandia
-			}
 		}
 	}
 	

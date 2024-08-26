@@ -31,10 +31,6 @@ ENG_vickers_armstrong_eng_organization = {
 	}
 
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {
@@ -58,17 +54,6 @@ ENG_vickers_armstrong_eng_organization = {
 				FROM = {
 					has_country_flag = has_invited_vickers_mio_flag 
 				}
-			}
-		}
-		IF = {
-			limit = { FROM = { original_tag = BUL } } 
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = ENG
-				}
-				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 	}
@@ -151,19 +136,6 @@ ENG_vauxhall_organization = {
 	}
 
 	visible = {
-		IF = { 
-			limit = {
-				FROM = { original_tag = POL }
-			}
-			FROM = {
-				has_country_flag = POL_vauxhall_motors
-			}
-		}
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
-	
 	}
 
 	available = {
@@ -186,27 +158,6 @@ ENG_vauxhall_organization = {
 				tooltip = has_invited_mio_tt
 				FROM = {
 					has_country_flag = has_invited_vauxhall_mio_flag 
-				}
-			}
-		}
-		IF = {
-			limit = { FROM = { original_tag = BUL } } 
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = ENG
-				}
-				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
-		IF = {
-			limit = { FROM = { original_tag = BRA } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
-					has_country_flag = has_vauxhall_mio_flag
 				}
 			}
 		}
@@ -302,16 +253,6 @@ ENG_cammell_laird_organization = {
 			}
 			FROM = { NOT = { has_war_with = ENG } }
 		}
-		IF = {
-			limit = { FROM = { original_tag = BRA } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
-					has_country_flag = has_cammell_laird_mio_flag
-				}
-			}
-		}
 	}
 		
 
@@ -381,24 +322,6 @@ ENG_yarrow_shipbuilders_organization = {
 			}
 			FROM = { NOT = { has_war_with = ENG } }
 		}
-
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_yarrow_mio_flag 
-				}
-			}
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = ENG
-				}
-				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
 	}
 }
 
@@ -422,10 +345,6 @@ ENG_john_brown_organization = {
 	}
 
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {
@@ -584,15 +503,6 @@ ENG_de_havilland_organization = {
 			}
 			FROM = { NOT = { has_war_with = ENG } }
 		}
-
-		if = {
-			limit = {
-				FROM = { tag = NOR }
-			}
-			FROM = {
-				has_completed_focus = NOR_invite_transnational_manufacturers
-			}
-		}
 	}
 }
 
@@ -615,10 +525,6 @@ ENG_fairey_aviation_organization = {
 	}
 
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {
@@ -628,24 +534,6 @@ ENG_fairey_aviation_organization = {
 				FROM = { NOT = { original_tag = ENG } }
 			}
 			FROM = { NOT = { has_war_with = ENG } }
-		}
-
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_fairey_aviation_mio_flag 
-				}
-			}
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = ENG
-				}
-				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
 		}
 		ELSE_IF = {
 			limit = {
@@ -679,16 +567,6 @@ ENG_avro_organization = {
 				FROM = { NOT = { original_tag = ENG } }
 			}
 			FROM = { NOT = { has_war_with = ENG } }
-		}
-		IF = {
-			limit = { FROM = { original_tag = BRA } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
-					has_country_flag = has_avro_mio_flag
-				}
-			}
 		}
 	}
 }
@@ -733,21 +611,6 @@ ENG_rsaf_enfield_organization = {
 				FROM = { NOT = { original_tag = ENG } }
 			}
 			FROM = { NOT = { has_war_with = ENG } }
-		}
-
-		if = {
-			limit = {
-				FROM = {
-					OR = {
-						original_TAG = LAT
-						original_TAG = LIT
-						original_TAG = EST
-					}
-				}
-			}
-			FROM = {
-				has_completed_focus = BALTIC_british_designers
-			}
 		}
 	}
 
@@ -808,18 +671,6 @@ ENG_vauxhall_automotive_organization = {
 	}
 	
 	visible = {
-		IF = { 
-			limit = {
-				FROM = { original_tag = POL }
-			}
-			FROM = {
-				has_country_flag = POL_vauxhall_motors
-			}
-		}
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}	
 	}
 	
 	available = {
@@ -843,17 +694,6 @@ ENG_vauxhall_automotive_organization = {
 				FROM = {
 					has_country_flag = has_invited_vauxhall_mio_flag 
 				}
-			}
-		}
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			FROM = {
-				OR = {
-					is_subject = no
-					is_subject_of = ENG
-				}
-				#is_in_faction_with = ENG
-				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
 		IF = {
@@ -893,21 +733,6 @@ ENG_royal_arsenal_organization = {
 				FROM = { NOT = { original_tag = ENG } }
 			}
 			FROM = { NOT = { has_war_with = ENG } }
-		}
-
-		if = {
-			limit = {
-				FROM = {
-					OR = {
-						original_TAG = LAT
-						original_TAG = LIT
-						original_TAG = EST
-					}
-				}
-			}
-			FROM = {
-				has_completed_focus = BALTIC_british_designers
-			}
 		}
 	}
 }

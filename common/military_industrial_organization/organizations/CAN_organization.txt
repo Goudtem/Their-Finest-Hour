@@ -82,7 +82,6 @@ CAN_fairchild_aircraft_ltd_organization = {
 		has_dlc = "Together for Victory"
 	}
 	available = {
-		owner = { has_completed_focus = CAN_fund_fairchilds_development }
 	}
 }
 
@@ -95,7 +94,6 @@ CAN_handley_page_organization = {
 		has_dlc = "Together for Victory"
 	}
 	available = {
-		owner = { has_completed_focus = CAN_cookie_carriers }
 	}
 }
 

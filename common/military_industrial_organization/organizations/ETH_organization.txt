@@ -54,7 +54,6 @@ ETH_ncgf_organization = {
 		has_dlc = "By Blood Alone"
 	}
 	available = {
-		owner = { has_completed_focus = ETH_invest_in_the_west }
 	}
 }
 ETH_hmmbi_organization = {
@@ -66,7 +65,6 @@ ETH_hmmbi_organization = {
 		has_dlc = "By Blood Alone"
 	}
 	available = {
-		owner = { has_completed_focus = ETH_invest_in_the_north }
 	}
 }
 

@@ -47,7 +47,6 @@ POR_ogma_organization = {
 		tag = POR
 	}
 	available = { 
-		owner = { has_completed_focus = POR_ogma }
 	}
 }
 
@@ -87,8 +86,7 @@ POR_ogme_organization = {
 		has_dlc = "La Resistance"
 		tag = POR
 	}
-	available = { 
-		owner = { has_completed_focus = POR_ogme }
+	available = {
 	}
 }
 
@@ -100,7 +98,6 @@ POR_fma_organization = {
 		tag = POR
 	}
 
-	available = { 
-		owner = { has_completed_focus = POR_portuguese_artillery }
+	available = {
 	}
 }

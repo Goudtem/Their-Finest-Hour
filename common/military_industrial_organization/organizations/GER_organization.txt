@@ -39,12 +39,6 @@ GER_porsche_organization = {
 			}
 			FROM = { is_in_faction_with = GER }
 		}
-		ELSE_IF = {
-			limit = {
-				FROM = { tag = NOR }
-			}
-			FROM = { has_completed_focus = NOR_invite_german_engineers }
-		}
 	}
 }
 
@@ -67,10 +61,6 @@ GER_henschel_organization = {
 	}
 	
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 
 	available = {
@@ -96,17 +86,6 @@ GER_henschel_organization = {
 				}
 			}
 			
-		}
-		IF = {
-			limit = { FROM = { original_tag = BUL } } 
-			FROM = { 
-				OR = {
-					is_subject = no
-					is_subject_of = GER
-				}
-				#is_in_faction_with = GER
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
 		}
 	}
 }
@@ -157,16 +136,6 @@ GER_daimler_benz_organization = {
 				FROM = { NOT = { original_tag = GER } }
 			}
 			FROM = { NOT = { has_war_with = GER } }
-		}
-		IF = {
-			limit = {
-				FROM = {
-					original_tag = BRA
-				}
-			}
-			FROM = {
-				has_completed_focus = BRA_german_tanks
-			}
 		}
 	}
 
@@ -294,10 +263,6 @@ GER_messerschmitt_organization = {
 		}
 		
 		if = {
-			limit = {
-				FROM = { original_tag = NOR }
-			}
-			FROM = { has_completed_focus = NOR_invite_german_engineers }
 		}
 	}
 
@@ -356,10 +321,6 @@ GER_junkers_organization = {
 	}
 	
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 
 	available = {
@@ -432,32 +393,6 @@ GER_heinkel_organization = {
 			}
 			FROM = { NOT = { has_war_with = GER } }
 		}
-
-		IF = {
-			limit = {
-				FROM = { original_tag = BUL }
-			}
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_heinkel_mio_flag
-				}
-			}
-			FROM = { 
-				OR = {
-					is_subject = no
-					is_subject_of = GER
-				}
-				#is_in_faction_with = GER
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
-		}
-		ELSE_IF = {
-			limit = {
-				FROM = { original_tag = NOR }
-			}
-			FROM = { has_completed_focus = NOR_invite_german_engineers }
-		}
 	}
 }
 
@@ -521,10 +456,6 @@ GER_mauser_organization = {
 	}
 	
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {
@@ -575,24 +506,6 @@ GER_opel_organization = {
 				FROM = { NOT = { original_tag = GER } }
 			}
 			FROM = { NOT = { has_war_with = GER } }
-		}
-
-		IF = {
-			limit = { FROM = { original_tag = BUL } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_country_flag = has_invited_opel_mio_flag
-				}
-			}
-			FROM = { 
-				OR = {
-					is_subject = no
-					is_subject_of = GER
-				}
-				#is_in_faction_with = GER
-				NOT = { has_completed_focus = BUL_nationalization }
-			}
 		}
 		IF = {
 			limit = { FROM = { original_tag = ROM } }

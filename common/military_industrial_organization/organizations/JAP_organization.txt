@@ -37,12 +37,6 @@ JAP_kure_naval_arsenal_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		FROM = {
-			OR = {
-				has_completed_focus = JAP_supremacy_of_the_battlefleet
-				has_completed_focus = JAP_the_ultimate_battleship
-			}
-		}
 	}
 }
 
@@ -70,12 +64,6 @@ JAP_maizuru_naval_arsenal_organization = {
 	}
 	
 	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {
@@ -136,12 +124,6 @@ JAP_mitsubishi_organization = {
 	}
 	
 	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {
@@ -151,9 +133,6 @@ JAP_mitsubishi_organization = {
 				FROM = { NOT = { original_tag = JAP } }
 			}
 			FROM = { NOT = { has_war_with = JAP } }
-		}
-		ELSE = {
-			FROM = { has_completed_focus = JAP_agility_focus }
 		}
 
 		IF = {
@@ -177,7 +156,6 @@ JAP_aichi_organization = {
 		tag = JAP
 	}
 	available = {
-		FROM = { has_completed_focus = JAP_range_focus }
 	}
 }
 
@@ -244,12 +222,6 @@ JAP_nissan_organization = {
 	}
 	
 	visible = {
-		IF = {
-			limit = {
-				FROM = { original_tag = ETH }
-			}
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 	
 	available = {

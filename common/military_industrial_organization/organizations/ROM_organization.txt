@@ -105,12 +105,6 @@ ROM_iar_organization = {
 		tag = ROM
 	}
 	available = {
-		if = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			FROM = { has_completed_focus = ROM_invest_in_the_iar }
-		}
 	}
 
 	add_trait = {
@@ -126,7 +120,6 @@ ROM_iar_organization = {
 		}
 
 		available = {
-			FROM = { has_completed_focus = ROM_invest_in_the_iar }
 		}
 
 		equipment_bonus = {

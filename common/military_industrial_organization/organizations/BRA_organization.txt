@@ -23,14 +23,6 @@
  			}
  			FROM = { NOT = { has_war_with = BRA } }
  		}
- 		ELSE = { #original_tag = BRA
- 			FROM = {
- 				OR = {
- 					has_completed_focus = SMB_domestic_production
- 					has_completed_focus = SMB_foreign_designs
- 				}
- 			}
- 		} 
  	}
  }
 
@@ -100,13 +92,6 @@ BRA_embraer_organization = {
 			}
 			FROM = { NOT = { has_war_with = BRA } }
 		}
-		ELSE = {
-			FROM = {
-				OR = {
-					has_completed_focus = SMB_establish_aircraft_industry
-				}
-			}
-		}
 	}
 }
 
@@ -167,13 +152,6 @@ BRA_fnm_organization = {
 				FROM = { NOT = { original_tag = BRA } }
 			}
 			FROM = { NOT = { has_war_with = BRA } }
-		}
-		ELSE = {
-			FROM = { 
-				OR = { 
-					has_completed_focus = SMB_motorized 
-					has_completed_focus = BRA_fabrica_nacional_de_motores
-				}
 		}
 	}
 }

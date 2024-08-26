@@ -142,7 +142,8 @@ SWE_gotaverken_organization = {
 		any_parent = { generic_mio_trait_semi_armor_piercing_shells generic_mio_trait_super_heavy_shells generic_mio_trait_high_velocity_guns }
 		special_trait_background  = yes
 		position = { x=0 y=2 }
-		available = { SWE = { has_completed_focus = SWE_gotaverken } }
+		available = {
+		}
 		production_bonus = {
 			production_capacity_factor = 0.06
 		}
@@ -177,16 +178,6 @@ SWE_saab_organization = {
 				FROM = { NOT = { original_tag = SWE } }
 			}
 			FROM = { NOT = { has_war_with = SWE } }
-		}
-		IF = {
-			limit = { FROM = { original_tag = BRA } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
-					has_country_flag = has_saab_mio_flag
-				}
-			}
 		}
 	}
 
@@ -260,10 +251,6 @@ SWE_volvo_organization = {
 	}
 
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 
 	available = {
@@ -309,16 +296,6 @@ SWE_scania_vabis_organization = {
 			}
 			FROM = { NOT = { has_war_with = SWE } }
 		}
-		IF = {
-			limit = { FROM = { original_tag = BRA } }
-			custom_trigger_tooltip = {
-				tooltip = has_invited_mio_tt
-				FROM = {
-					has_completed_focus = BRA_invite_foreign_companies
-					has_country_flag = has_scania_vabis_mio_flag
-				}
-			}
-		}
 	}	
 }
 
@@ -338,10 +315,6 @@ SWE_bofors_organization = {
 	}
 
 	visible = {
-		IF = {
-			limit = { FROM = { original_tag = ETH } }
-			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}
 	}
 
 	available = {
@@ -383,7 +356,6 @@ SWE_bofors_organization = {
 
 		all_parents = { generic_mio_trait_improved_hydraulic_recoil_system }
 		available = {
-			SWE = { has_completed_focus = SWE_bofors_fly_swatter }
 		}
 
 		limit_to_equipment_type = {
@@ -406,7 +378,6 @@ SWE_bofors_organization = {
 
 		all_parents = { generic_mio_trait_improved_hydraulic_recoil_system }
 		available = {
-			SWE = { has_completed_focus = SWE_bofors_anti_tank_gun }
 		}
 
 		limit_to_equipment_type = {
@@ -434,7 +405,6 @@ SWE_bofors_organization = {
 
 		all_parents = { generic_mio_trait_sliding_breech_block }
 		available = {
-			SWE = { has_completed_focus = SWE_defense_in_depth }
 		}
 
 		equipment_bonus = {
