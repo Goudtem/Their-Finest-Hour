@@ -1399,4 +1399,3 @@ is_allied_seller_trigger = {
 		FROM = { is_in_faction_with = ROOT }
 	}
 }
-

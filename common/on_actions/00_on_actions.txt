@@ -129,11 +129,6 @@ on_actions = {
 				remove_ideas = race_for_the_bomb_outclassed
 			}
 			if = {
-				limit = { NOT = { has_country_flag = achievement_has_dropped_nuke } }
-				goto_state = FROM
-				set_country_flag = achievement_has_dropped_nuke
-			}
-			if = {
 				limit = {
 					FROM = { state = 378 }
 				}
@@ -239,12 +234,6 @@ on_actions = {
 
 	on_leave_faction = {
 		effect = {
-			if = {
-				limit = {
-					has_country_flag = TO_joined_brussels_treaty
-				}
-				clr_country_flag = TO_joined_brussels_treaty
-			}
 			if = {
 				limit = {
 					AND = {
@@ -431,33 +420,6 @@ on_actions = {
 				}
 				set_country_flag = invalid_for_danzig_achievement
 			}
-			#make sure warlords don't use the same guy
-			if = {
-				limit = {
-					OR = {
-						original_tag = YUN
-						original_tag = SIK
-						original_tag = GXC
-						original_tag = SHX
-						original_tag = XSM
-					}
-				}
-				if = {
-					limit = {
-						ROOT = {
-							original_tag = FROM
-							NOT = { has_country_flag = warlord_replaced }
-						}
-					}
-					ROOT = {
-						retire_country_leader = yes
-						set_country_flag = warlord_replaced
-					}
-					FROM = {
-						warlord_rule_all_parties = yes
-					}
-				}
-			}
 			#make sure Dominions lose the dominion tag
 			if = {
 				limit = {
@@ -636,28 +598,6 @@ on_actions = {
 					}
 				}
 			}
-
-			if = {
-				limit = {
-					FROM = {
-						has_civil_war = yes
-						original_tag = SPR
-					}
-					has_civil_war = yes
-					original_tag = SPR
-
-				}
-				random_country = {
-					limit = {
-						original_tag = FRA
-						OR = {
-							has_completed_focus = FRA_right_wing_rhetoric
-							has_completed_focus = FRA_utilize_the_leagues
-						}
-					}
-					country_event = { id = france.32 }
-				}
-			}
 		}
 	}
 
@@ -759,22 +699,6 @@ on_actions = {
 				limit = { tag = FRA }
 				set_global_flag = FRA_already_surrendered
 				set_variable = { global.FRA_capitulation_days = global.num_days }
-			}
-			if = {
-				limit = {
-					FROM = { tag = JAP }
-					ROOT = { tag = CHI }
-				}
-				JAP = { JAP_intervene_in_china_remove = yes }
-			}
-
-			if = {
-				limit = {
-					original_tag = POL
-					has_government = neutrality
-					NOT = { has_completed_focus = POL_fulfil_fifth_of_november }
-				}
-				retire_country_leader = yes
 			}
 			if = {
 				limit = {
@@ -1081,24 +1005,6 @@ on_actions = {
 						has_government = fascism
 					}
 				}
-				if = {
-					limit = {
-						OR = {
-							is_historical_focus_on = no
-							has_completed_focus = SPA_supremacy_of_the_communion
-						}
-					}
-					add_timed_idea = { idea = SPA_recovering_from_civil_war days = 2190 }
-				}
-				if = {
-					limit = {
-						is_historical_focus_on = yes
-						NOT = {
-							has_completed_focus = SPA_supremacy_of_the_communion
-						}
-					}
-					add_ideas = SPA_recovering_from_civil_war #keep the spirit on historical mode, keeping them out of the war
-				}
 			}
 			#End of SCW
 			if = {
@@ -1152,28 +1058,6 @@ on_actions = {
 				}
 				news_event = { id = mtg_news.7 days = 4 random_days = 5 }
 			}
-			#End of Balkan war
-			if = {
-				limit = {
-					has_dlc = "Death or Dishonor"
-					original_tag = YUG
-				}
-				every_other_country = {
-					limit = {
-						has_country_flag = yugoslav_puppet_flag
-					}
-					white_peace = PREV
-					PREV = { puppet = PREV }
-					set_autonomy = { target = THIS autonomy_state = autonomy_integrated_puppet }
-				}
-				if = {
-					limit = {
-						FROM = { has_focus_tree = yugoslavian_focus }
-					}
-					load_focus_tree = { tree = yugoslavian_focus keep_completed = yes }
-					unlock_national_focus = YUG_end_the_regency
-				}
-			}
 			#End of ideology Civil War
 			if = {
 				limit = {
@@ -1183,20 +1067,6 @@ on_actions = {
 				set_country_flag = { flag = won_ideology_civil_war value = 1 days = 365 }
 				country_event = { id = generic.11 days = 1 }
 			}
-			if = {
-				limit = {
-					original_tag = BUL
-					has_focus_tree = generic_focus
-				}
-				if = {
-					limit = { has_idea = BUL_second_national_catastrophe }
-					remove_ideas = BUL_second_national_catastrophe
-				}
-				if = {
-					limit = { has_idea = BUL_second_national_catastrophe_02 }
-					remove_ideas = BUL_second_national_catastrophe_02
-				}
-			}
 		}
 	}
 
@@ -1205,26 +1075,6 @@ on_actions = {
 
 	on_puppet = {
 		effect = {
-			if = {
-				limit = {
-					OR = {
-						original_tag = DDR
-						original_tag = WGR
-						original_tag = GER
-					}
-					has_government = communism
-					OR = {
-						has_country_leader = { name = "Wilhelm Pieck" }
-						has_country_leader = { character = GER_wilhelm_pieck }
-					}
-					FROM = {
-						original_tag = SOV
-						has_government = communism
-						has_country_leader = { character = SOV_iosif_stalin } # Would look silly if Trotsky released Stalin's Puppet
-					}
-				}
-				add_country_leader_trait = stalins_puppet
-			}
 			if = {
 				limit = {
 					NOT = { has_elections = yes }
@@ -1243,25 +1093,6 @@ on_actions = {
 
 	on_release_as_puppet = {
 		effect = {
-			if = {
-				limit = {
-					OR = {
-						original_tag = DDR
-						original_tag = WGR
-						original_tag = GER
-					}
-					has_government = communism
-					OR = {
-						has_country_leader = { name = "Wilhelm Pieck" }
-						has_country_leader = { character = GER_wilhelm_pieck }
-					}					FROM = {
-						original_tag = SOV
-						has_government = communism
-						has_country_leader = { character = SOV_iosif_stalin } # Would look silly if Trotsky released Stalin's Puppet
-					}
-				}
-				add_country_leader_trait = stalins_puppet
-			}
 			if = {
 				limit = {
 					NOT = { has_elections = yes }
@@ -3400,75 +3231,6 @@ on_actions = {
 					}
 				}
 			}
-			DEN = {
-				if = {
-					limit = {
-						has_dlc = "Arms Against Tyranny"
-						OR = {
-							AND = {
-								is_historical_focus_on = no
-								has_game_rule = {
-									rule = DEN_ai_behavior
-									option = DEFAULT
-								}
-							}
-							has_game_rule = {
-								rule = DEN_ai_behavior
-								option = RANDOM
-							}
-						}
-					}
-					random_list = {
-						30 = { set_country_flag = DEN_AI_RANDOM_HISTORICAL }
-						25 = { set_country_flag = DEN_AI_RANDOM_ALLIANCE_PLAN }
-						20 = { set_country_flag = DEN_AI_RANDOM_MONARCHIST_PLAN }
-						15 = { set_country_flag = DEN_AI_RANDOM_FASCIST_PLAN }
-						#10 = { set_country_flag = COMMUNIST }
-					}
-				}
-			}
-			ICE = {
-				if = {
-					limit = {
-						has_dlc = "Arms Against Tyranny"
-						OR = {
-							AND = {
-								is_historical_focus_on = no
-								has_game_rule = {
-									rule = ICE_ai_behavior
-									option = DEFAULT
-								}
-							}
-							has_game_rule = {
-								rule = ICE_ai_behavior
-								option = RANDOM
-							}
-						}
-					}
-					random_list = {
-						60 = { set_country_flag = ICE_AI_RANDOM_HISTORICAL }
-						20 = { 
-							modifier = {
-								factor = 5
-								DEN = {
-									OR = {
-										has_country_flag = DEN_AI_RANDOM_ALLIANCE_PLAN
-										has_game_rule = {
-											rule = DEN_ai_behavior
-											option = DEN_rearmament_plan
-										}
-									}
-								}
-							}
-							set_country_flag = ICE_AI_RANDOM_ALT_DEMOCRATIC_PLAN 
-						}
-						20 = { set_country_flag = ICE_AI_RANDOM_FASCIST_PLAN }
-						20 = { set_country_flag = ICE_AI_RANDOM_COMMUNIST_PLAN }
-					
-						#10 = { set_country_flag = COMMUNIST }
-					}
-				}
-			}
 			CHL = {
 				IF = {
 					limit = {
@@ -3653,30 +3415,6 @@ on_actions = {
 		}
 	}
 
-
-	#ROOT = country that joined a war
-	#Fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first
-	on_war = { 
-		effect = {
-			if = {
-				limit = {
-					tag = USA
-					has_war_with = JAP
-					NOT = { has_global_flag = day_of_infamy_happened }
-					has_country_leader = { character = USA_franklin_delano_roosevelt ruling_only = yes }
-				}
-				play_day_of_infamy_effect = yes
-			}
-			if = {
-				limit = {
-					tag = ENG
-					has_war_with = GER
-					has_country_leader = { character = ENG_neville_chamberlain ruling_only = yes }
-				}
-				play_war_with_germany_effect = yes
-			}
-		}
-	}
 	#ROOT = attacking side
 	#FROM = defending side
 	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
@@ -3865,22 +3603,6 @@ on_actions = {
 			}
 			if = {
 				limit = {
-					tag = GER
-					has_country_flag = germany_war_return_kaiser
-					has_government = neutrality
-					FROM = {
-						original_tag = HOL
-						has_country_flag = netherlands_refused_return_kaiser
-					}
-					OR = {
-						7 = { is_controlled_by = GER }
-						HOL = { is_subject_of = GER }
-					}
-				}
-				country_event = { id = wtt_germany.6 }
-			}
-			if = {
-				limit = {
 					tag = CSA
 					has_war = yes
 					FROM = {
@@ -3924,23 +3646,6 @@ on_actions = {
 						value = 1
 					}
 					state_event = { id = mtg_usa_civil_war_fascists.202 trigger_for = controller }
-				}
-			}
-			if = {
-				limit = {
-					original_tag = USA
-					has_civil_war = yes
-					tag = event_target:USA_civil_war_democrats
-					has_country_flag = citizen_militia_spawned
-					FROM.FROM = {
-						is_core_of = USA
-						has_state_flag = USA_citizen_militia
-						not = { has_state_flag = USA_militia_spawned }
-					}
-				}
-				FROM.FROM = {
-					set_state_flag = USA_militia_spawned
-					state_event = { id = mtg_usa_civil_war_fascists.1000 trigger_for = controller }
 				}
 			}
 			if = {
