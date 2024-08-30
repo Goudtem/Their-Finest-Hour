@@ -81,6 +81,7 @@
  ENG_neutrality_party_kings_party_long:0 "The King's Party"
  ENG_neutrality_party_queens_party:0 "Queen's Party"
  ENG_neutrality_party_queens_party_long:0 "The Queen's Party"
+
  ITA_communism_party:1 "PCI"
  ITA_communism_party_long:0 "Partito Comunista Italiano"
  ITA_democratic_party:1 "PPI"
@@ -95,18 +96,38 @@
  ITA_partito_democratico_del_lavoro_long:0 "Partito Democratico del Lavoro"
  ITA_democrazia_cristiana:0 "DC"
  ITA_democrazia_cristiana_long:0 "Democrazia Cristiana"
+
  JAP_communism_party:0 "Nihon Kyosan-to"
  JAP_democratic_party:0 "Rikken Minseito"
  JAP_fascism_party:0 "Taisei Yokusankai"
  JAP_neutrality_party_kodoha_long:0 "Kodoha Faction"
  JAP_neutrality_party_kodoha:0 "Kodoha Faction"
+
  USA_communism_party:0 "Communist Party USA"
  USA_democratic_party:0 "Democratic Party"
  USA_republican_party:0 "Republican Party"
  USA_fascism_party:0 "Silver Legion of America"
- FRA_communism_party:0 "Parti Communiste Francais"
+
+ # France
+
+ FRA_communism_party:0 "PCF"
+ FRA_communism_party_long:0 "Parti Communiste Francais"
+ FRA_neutrality_party:0 "AF"
+ FRA_neutrality_party_long:0 "Action Française"
  FRA_democratic_party:0 "Parti Radical"
- FRA_fascism_party:0 "Mouvement Franciste"
+ FRA_fascism_party:0 "Unorganised Statist Movements"
+
+ FRA_orleanist_party_long:0 "Parti orléaniste"
+ FRA_orleanist_party:0 "Parti orléaniste"
+ FRA_legitimist_party_long:0 "Parti légitimiste"
+ FRA_legitimist_party:0 "Parti légitimiste"
+ FRA_bonepartist_party_long:0 "Parti bonapartiste"
+ FRA_bonepartist_party:0 "Parti bonapartiste"
+ FRA_union_populaire_long:0 "Union populaire française"
+ FRA_union_populaire:0 "UPF"
+ 
+ # Soviet Union
+
  SOV_communism_party:0 "All-Union Communist Party"
  SOV_communism_party_russian:0 "VKP(B)"
  SOV_communism_party_russian_long:0 "Vsesoyuznaya Kommunisticheskaya Partiya (Bolshevikov)"
@@ -114,12 +135,14 @@
  SOV_fascism_party:0 "RFP"
  SOV_fascism_party_russian:0 "VFP"
  SOV_fascism_party_russian_long:0 "Vserossyskaya Fashistskaya Partiya"
+
  AUS_communism_party:0 "KPÖ"
  AUS_communism_party_long:0 "Kommunistische Partei Österreichs"
  AUS_democratic_party:0 "SDAPÖ"
  AUS_democratic_party_long:0 "Sozialdemokratische Partei Österreichs"
  AUS_fascism_party:1 "DNSAP"
  AUS_neutrality_party:1 "Vaterländische Front"
+
  SPR_fascism_party:1 "CEDA"
  SPR_fascism_party_long:0 "Confederación Española de Derechas Autónomas"
  SPR_democratic_party:1 "PSOE"
@@ -623,7 +646,10 @@
  SIK_communism_party:0 "People's Anti-Imperialist Association"
  SIK_fascism_party:0 "ETR"
  SIK_fascism_party_long:0 "East Turkestan Republic (Influence)"
-
+ 
+ TIB_communism_party:0 "CPC"
+ TIB_communism_party_long:0 "Communist Party of China"
+ TIB_democratic_party:0 "Tibet Improvement Party"
  TIB_neutrality_party:0 "Retting Rinpoche"
  
  YUN_democratic_party:0 "KMT"
@@ -633,11 +659,20 @@
  YUN_communism_party:0 "CPC"
  YUN_communism_party_long:0 "Communist Party of China"
 
- MON_communism_party:0 "MAN"
- MON_communism_party_long:0 "Mongol Ardiin Nam"
+ MEN_fascism_party:0 "Pailingmiao Council (Japanese Influence)"
+ MEN_fascism_party_long:0 "Mongol Local Autonomy Political Affairs Committee (Japanese Influence)"
+ MEN_democratic_party:0 "Pailingmiao Council"
+ MEN_democratic_party_long:0 "Mongol Local Autonomy Political Affairs Committee"
+ MEN_neutrality_party:0 "KMT (Ma)"
+ MEN_neutrality_party_long:0 "Kuomintang (Ma)"
 
- TAN_communism_party:0 "CPSU"
- TAN_communism_party_long:0 "Communist Party of the Soviet Union"
+ MON_communism_party:0 "MAKN"
+ MON_communism_party_long:0 "Mongol Ardiin Khuvisgalt Nam"
+ 
+ TAN_neutrality_party:0 "Provisional Government"
+ TAN_communism_party:0 "TAXN"
+ TAN_communism_party_long:0 "Тьва Arat-Xuviskaalçь Nam"
+
  PAR_communism_party:0 "PRF"
  PAR_communism_party_long:0 "Partido Revolucionario Febrerista"
  PAR_democratic_party:0 "Partido Azul"
@@ -778,14 +813,6 @@
  HAW_democratic_party_long:0 "Democratic Party of Hawai'i"
  HAW_communism_party:0 "CPH"
  HAW_communism_party_long:0 "Communist Party of Hawai'i"
- FRA_orleanist_party_long:0 "Parti orléaniste"
- FRA_orleanist_party:0 "Parti orléaniste"
- FRA_legitimist_party_long:0 "Parti légitimiste"
- FRA_legitimist_party:0 "Parti légitimiste"
- FRA_bonepartist_party_long:0 "Parti bonapartiste"
- FRA_bonepartist_party:0 "Parti bonapartiste"
- FRA_union_populaire_long:0 "Union populaire française"
- FRA_union_populaire:0 "UPF"
  BRI_fascism_party:0 "NPB"
  BRI_fascism_party_long:0 "Breton National Party"
  BRI_neutrality_party:0 "URB"
