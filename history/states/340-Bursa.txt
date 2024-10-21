@@ -10,7 +10,9 @@ state={
 	state_category = town
 
 	history={
-		owner = TUR
+		owner = ENG
+		add_core_of = TUR
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -22,16 +24,7 @@ state={
 		}
 		victory_points = {
 			9799 5
-		}
-		add_core_of = TUR
-		if = {
-			limit = { has_dlc = "Battle for the Bosporus" }
-			set_demilitarized_zone = yes
-		}
-		
-		1936.11.9 = {
-			set_demilitarized_zone = no
-		}
+		}	
 	}
 
 	provinces={

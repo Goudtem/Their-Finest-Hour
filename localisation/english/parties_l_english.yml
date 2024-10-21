@@ -126,14 +126,13 @@
  FRA_union_populaire:0 "UPF"
  
  # Soviet Union
-
- SOV_communism_party:0 "All-Union Communist Party"
- SOV_communism_party_russian:0 "VKP(B)"
- SOV_communism_party_russian_long:0 "Vsesoyuznaya Kommunisticheskaya Partiya (Bolshevikov)"
+ 
+ SOV_neutrality_party:0 "Independent"
+ SOV_communism_party:0 "KPSS"
+ SOV_communism_party_long:0 "Kommunisticheskaya Partiya Sovetskogo Soyuza"
  SOV_democratic_party:0 "Trudoviks"
- SOV_fascism_party:0 "RFP"
- SOV_fascism_party_russian:0 "VFP"
- SOV_fascism_party_russian_long:0 "Vserossyskaya Fashistskaya Partiya"
+ SOV_fascism_party:0 "REP"
+ SOV_fascism_party_long:0 "Rossiyskaya Etatistskaya Partiya"
 
  AUS_communism_party:0 "KPÖ"
  AUS_communism_party_long:0 "Kommunistische Partei Österreichs"

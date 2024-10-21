@@ -17,3 +17,11 @@ set_popularities = {
 	communism = 10
 	neutrality = 10
 }
+
+# DIPLOMACY
+
+give_guarantee = TUR
+give_guarantee = ALB
+ALB = {
+	give_military_access = ITA
+}

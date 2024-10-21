@@ -1,14 +1,15 @@
 state={
-	id=744
+	id = 744
 	name="STATE_744"
 	provinces={
 		1976 2006 4167 4256 4295 5092 7301 7406 7418 10257 12713 
 	}
 
 	history={
-		owner = CHI
-		add_core_of = PRC
+		owner = SHX
+		add_core_of = SHX
 		add_core_of = CHI
+		add_claim_by = PRC
 		victory_points = {
 			7418 1 
 		}

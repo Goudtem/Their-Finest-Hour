@@ -237,7 +237,7 @@ SIA = {
 	color_ui = rgb { 222 247 198 }
 }
 SIK = {
-	color = rgb { 71 190 152 }
+	color = rgb { 190 19 19 }
 	color_ui = rgb { 222 247 198 }
 }
 TIB = {

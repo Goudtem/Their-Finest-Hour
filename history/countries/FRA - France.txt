@@ -18,6 +18,9 @@ set_popularities = {
 	communism = 20
 }
 
+# DIPLOMACY
+
+give_guarantee = TUR
 give_guarantee = CZE
 give_guarantee = YUG
 give_guarantee = ROM

@@ -22,9 +22,13 @@ set_popularities = {
 # DIPLOMACY
 
 give_guarantee = EGY
+EGY = {
+	give_military_access = ENG
+}
 give_guarantee = NEP
 give_guarantee = BHU
 give_guarantee = TIB
+give_guarantee = TUR
 
 set_autonomy = {
 	target = MAL
