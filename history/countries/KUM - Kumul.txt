@@ -1,7 +1,7 @@
-﻿capital = 754 #Was 604, but should be Xining
-oob = "XSM_1936"
+﻿capital = 760
+oob = "TNG_1936"
 
-set_research_slots = 3
+set_research_slots = 2
 set_stability = 0.5
 set_war_support = 0.35
 set_convoys = 10
@@ -17,10 +17,4 @@ set_popularities = {
 	fascism = 0
 	communism = 0
 	neutrality = 100
-}
-
-# DIPLOMACY
-
-TNG = {
-	give_military_access = XSM
 }

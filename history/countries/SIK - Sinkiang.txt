@@ -18,3 +18,14 @@ set_popularities = {
 	communism = 15
 	neutrality = 85
 }
+
+# DIPLOMACY
+
+set_autonomy = {
+	target = KUM
+	autonomous_state = autonomy_associated_province
+}
+set_autonomy = {
+	target = TNG
+	autonomous_state = autonomy_associated_province
+}

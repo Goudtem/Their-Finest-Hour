@@ -18,3 +18,14 @@ set_popularities = {
 	communism = 80
 	neutrality = 20
 }
+
+# DIPLOMACY
+
+SIK = {
+	give_military_access = SOV
+}
+
+create_faction = communist_international
+add_to_faction = SOV
+add_to_faction = MON
+add_to_faction = TAN

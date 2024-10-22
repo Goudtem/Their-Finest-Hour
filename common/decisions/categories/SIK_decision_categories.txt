@@ -1,0 +1,13 @@
+SIK_sinkiang_province_category = {
+    icon = GFX_decision_category_jap_intervene_in_china
+
+    allowed = {
+        OR = { 
+            original_tag = SIK
+            original_tag = KUM
+            original_tag = TNG
+        }
+    }
+    visible = {
+    }
+}

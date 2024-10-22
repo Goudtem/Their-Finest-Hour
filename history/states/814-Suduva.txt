@@ -4,7 +4,9 @@ state={
 	name="STATE_814"
 
 	history={
-		owner = LIT
+		owner = POL
+		add_core_of = LIT
+
 		victory_points = {
 			11312 1 #Marijampole
 		}
@@ -13,10 +15,7 @@ state={
 			arms_factory = 1
 			industrial_complex = 1
 			air_base = 4
-
 		}
-		add_core_of = LIT
-
 	}
 
 	provinces={

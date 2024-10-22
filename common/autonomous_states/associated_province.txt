@@ -1,0 +1,71 @@
+autonomy_state = {
+	id = autonomy_associated_province
+	
+	is_puppet = yes
+    use_overlord_color = yes
+	
+	min_freedom_level = 0.5
+	
+	manpower_influence = 1.0
+	
+	rule = {
+		desc = "RULE_DESC_IS_A_SUBJECT"
+		
+        can_be_spymaster = no
+        can_create_collaboration_government = no
+        can_create_factions = no
+        can_decline_call_to_war = yes
+        can_not_declare_war = no
+        can_puppet = no
+        can_send_volunteers = yes
+	}
+	
+	modifier = {
+		autonomy_manpower_share = 0.5
+		can_master_build_for_us = 1
+		extra_trade_to_overlord_factor = 0.25
+		overlord_trade_cost_factor = -0.25
+		cic_to_overlord_factor = 0.1
+		mic_to_overlord_factor = 0.25
+		peace_score_ratio_transferred_to_overlord = 0.1
+		lend_lease_tension_with_overlord = -0.3
+	}
+	
+	ai_subject_wants_higher = {
+		factor = 0.0
+	}
+	
+	ai_overlord_wants_lower = {
+		factor = 0.0
+	}
+
+	ai_overlord_wants_garrison = {
+		always = no
+	}
+
+	allowed = {
+		OR = {
+            original_tag = YUN
+            original_tag = XSM
+            original_tag = GXC
+            original_tag = SIK
+            original_tag = MAN
+            original_tag = SHX
+            original_tag = MEN
+            original_tag = MAN
+			original_tag = HNN
+			original_tag = SIC
+            original_tag = GDC
+            original_tag = TNG
+			original_tag = KUM
+        }
+	}
+	
+	can_take_level = {
+		always = no
+	}
+
+	can_lose_level = {
+		always = no
+	}
+}

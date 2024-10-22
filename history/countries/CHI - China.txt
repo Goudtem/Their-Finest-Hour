@@ -18,3 +18,38 @@ set_popularities = {
 	communism = 10
 	neutrality = 85
 }
+
+# DIPLOMACY
+
+set_autonomy = {
+	target = YUN
+	autonomous_state = autonomy_associated_province
+}
+set_autonomy = {
+	target = XSM
+	autonomous_state = autonomy_associated_province
+}
+set_autonomy = {
+	target = SHX
+	autonomous_state = autonomy_associated_province
+}
+set_autonomy = {
+	target = GXC
+	autonomous_state = autonomy_associated_province
+}
+set_autonomy = {
+	target = SIC
+	autonomous_state = autonomy_associated_province
+}
+set_autonomy = {
+	target = HNN
+	autonomous_state = autonomy_associated_province
+}
+set_autonomy = {
+	target = GDC
+	autonomous_state = autonomy_associated_province
+}
+set_autonomy = {
+	target = MEN
+	autonomous_state = autonomy_associated_province
+}

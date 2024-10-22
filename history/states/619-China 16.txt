@@ -12,9 +12,11 @@ state={
 	}
 
 	history={
-		owner = SIK
-		add_core_of = SIK
+		owner = TNG
+		add_core_of = TNG
 		add_core_of = CHI
+		add_claim_by = PRC
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

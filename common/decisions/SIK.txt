@@ -1,0 +1,154 @@
+SIK_sinkiang_province_category = {
+    SIK_unify_sinkiang = {
+        icon = GFX_decision_generic_nationalism
+        fire_only_once = yes
+
+        available = {
+            owns_state = 618
+            owns_state = 617
+            owns_state = 760
+            owns_state = 759
+            owns_state = 619
+            owns_state = 287
+        }
+        highlight_states = {
+            highlight_state_targets = {
+                state = 618
+                state = 617
+                state = 760
+                state = 759
+                state = 619
+                state = 287
+            }
+            highlight_color_while_active = 2
+            highlight_color_before_active = 3
+        }
+        ai_will_do = {
+            base = 100
+        }
+
+        complete_effect = {
+            add_state_core = 618
+            add_state_core = 617
+            add_state_core = 760
+            add_state_core = 759
+            add_state_core = 619
+            add_state_core = 287
+
+            if = {
+                limit = {
+                    OR = {
+                        original_tag = TNG
+                        original_tag = KUM
+                    }
+                }
+                set_cosmetic_tag = UNIFIEDSIK
+            }
+
+            set_country_flag = SIK_sinkiang_unified
+        }
+    }
+    SIK_invade_tanganistan = {
+        icon = GFX_decision_generic_prepare_civil_war
+        fire_only_once = yes
+        cost = 75
+
+        available = {
+            divisions_in_state = {
+                size < 1
+                state = 759
+            }
+            divisions_in_state = {
+                size < 1
+                state = 619
+            }
+        }
+        visible = {
+            original_tag = SIK
+        }
+        ai_will_do = {
+            base = 100
+        }
+
+        complete_effect = {
+            end_puppet = TNG
+            declare_war_on = {
+                target = TNG
+                type = annex_everything
+            }
+        }
+    }
+    SIK_rebel_against_sinkiang = {
+        icon = GFX_decision_generic_prepare_civil_war
+        fire_only_once = yes
+
+        available = {
+            SIK = {
+                has_war_with = TNG
+            }
+        }
+        visible = {
+            original_tag = KUM
+        }
+        ai_will_do = {
+            base = 100
+        }
+
+        complete_effect = {
+            SIK = {
+                end_puppet = KUM
+            }
+            declare_war_on = {
+                target = SIK
+                type = annex_everything
+            }
+            declare_war_on = {
+                target = TNG
+                type = annex_everything
+            }
+        }
+    }
+    SIK_align_with_the_kuomintang = {
+        icon = GFX_decision_generic_prepare_civil_war
+        fire_only_once = yes
+        cost = 25
+
+        available = {
+            has_country_flag = SIK_sinkiang_unified
+        }
+        visible = {
+            OR = {
+                original_tag = KUM
+                original_tag = TNG
+            }
+        }
+        ai_will_do = {
+            base = 100
+        }
+
+        complete_effect = {
+            if = {
+                limit = {
+                    original_tag = TNG
+                }
+                CHI = {
+                    set_autonomy = {
+                        target = TNG
+                        autonomous_state = autonomy_associated_province
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    original_tag = KUM
+                }
+                CHI = {
+                    set_autonomy = {
+                        target = KUM
+                        autonomous_state = autonomy_associated_province
+                    }
+                }
+            }
+        }
+    }
+}

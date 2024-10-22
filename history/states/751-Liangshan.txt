@@ -8,12 +8,13 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	history={
-		owner = CHI
+		owner = SIC
+		add_core_of = SIC
 		add_core_of = CHI
-		add_core_of = PRC
+		add_claim_by = PRC
+
 		buildings = {
 			infrastructure = 1
-
 		}
 		victory_points = {
 			12141 3
@@ -27,9 +28,7 @@ state={
 				infrastructure = 1
 
 			}
-
 		}
-
 	}
 
 	local_supplies=1.0 
