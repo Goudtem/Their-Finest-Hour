@@ -106,6 +106,8 @@ SIK_sinkiang_province_category = {
                 target = TNG
                 type = annex_everything
             }
+
+            news_event = sinkiang.1
         }
     }
     SIK_align_with_the_kuomintang = {
@@ -123,31 +125,14 @@ SIK_sinkiang_province_category = {
             }
         }
         ai_will_do = {
-            base = 100
+            base = 1000
         }
 
         complete_effect = {
-            if = {
-                limit = {
-                    original_tag = TNG
-                }
-                CHI = {
-                    set_autonomy = {
-                        target = TNG
-                        autonomous_state = autonomy_associated_province
-                    }
-                }
-            }
-            if = {
-                limit = {
-                    original_tag = KUM
-                }
-                CHI = {
-                    set_autonomy = {
-                        target = KUM
-                        autonomous_state = autonomy_associated_province
-                    }
-                }
+            CHI = {
+                country_event = sinkiang.2
+                hours = 6
+                random_hours = 6
             }
         }
     }

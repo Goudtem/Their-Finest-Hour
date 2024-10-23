@@ -1,0 +1,140 @@
+﻿add_namespace = sinkiang
+
+# Start of Sinkiang wars
+news_event = {
+	id = sinkiang.1
+	title = sinkiang.1.t
+	desc = sinkiang.1.d
+	picture = GFX_news_event_chinese_soldiers_mountain
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = sinkiang.1.a
+	}
+}
+country_event = {
+	id = sinkiang.2
+	title = sinkiang.2.t
+	desc = sinkiang.2.d
+
+	picture = GFX_report_event_chinese_soldiers
+	is_triggered_only
+
+	allowed = {
+		original_tag = CHI
+	}
+
+	option = {
+		name = sinkiang.2.a
+		add_political_power = -25
+
+		if = {
+			limit = {
+				TNG = {
+					has_country_flag = SIK_sinkiang_unified
+				}
+			}
+			set_autonomy = {
+				target = TNG
+				autonomous_state = autonomy_associated_province
+			}
+			TNG = {
+				country_event = sinkiang.3
+				hours = 6
+				random_hours = 6
+			}
+		}
+		if = {
+			limit = {
+				KUM = {
+					has_country_flag = SIK_sinkiang_unified
+				}
+			}
+			set_autonomy = {
+				target = KUM
+				autonomous_state = autonomy_associated_province
+			}
+			KUM = {
+				country_event = sinkiang.3
+				hours = 6
+				random_hours = 6
+			}
+		}
+
+		
+	}
+	option = {
+		name = sinkiang.2.b
+		add_political_power = 25
+		# Should give good relation with soviet union
+
+		if = {
+			limit = {
+				TNG = {
+					has_country_flag = SIK_sinkiang_unified
+				}
+			}
+			TNG = {
+				country_event = sinkiang.4
+				hours = 6
+				random_hours = 6
+			}
+		}
+		if = {
+			limit = {
+				KUM = {
+					has_country_flag = SIK_sinkiang_unified
+				}
+			}
+			KUM = {
+				country_event = sinkiang.4
+				hours = 6
+				random_hours = 6
+			}
+		}
+	}
+}
+
+# China Agrees
+country_event = {
+	id = sinkiang.3
+	title = sinkiang.3.t
+	desc = sinkiang.3.d
+
+	picture = GFX_report_event_generic_handshake
+	is_triggered_only
+
+	allowed = {
+		OR = {
+			original_tag = TNG
+			original_tag = KUM
+		}
+	}
+
+	option = {
+		name = sinkiang.3.a
+		add_stability = 0.05
+	}
+}
+
+# China Disagree
+country_event = {
+	id = sinkiang.4
+	title = sinkiang.4.t
+	desc = sinkiang.4.d
+
+	picture = GFX_report_event_chinese_soldiers_02
+	is_triggered_only
+
+	allowed = {
+		OR = {
+			original_tag = TNG
+			original_tag = KUM
+		}
+	}
+
+	option = {
+		name = sinkiang.4.a
+		add_war_support = 0.05
+	}
+}
