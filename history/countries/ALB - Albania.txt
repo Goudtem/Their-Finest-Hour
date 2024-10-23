@@ -18,3 +18,8 @@ set_popularities = {
 	communism = 10
 	neutrality = 10
 }
+
+add_ideas = {
+	ALB_italian_influence
+	free_trade
+}

@@ -19,6 +19,11 @@ set_popularities = {
 	neutrality = 20
 }
 
+add_ideas = {
+	SOV_inner_party_democracy
+	limited_export
+}
+
 # DIPLOMACY
 
 SIK = {
