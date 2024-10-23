@@ -18,7 +18,8 @@ country_event = {
 	desc = sinkiang.2.d
 
 	picture = GFX_report_event_chinese_soldiers
-	is_triggered_only
+	is_triggered_only = yes
+
 
 	allowed = {
 		original_tag = CHI
@@ -39,9 +40,11 @@ country_event = {
 				autonomous_state = autonomy_associated_province
 			}
 			TNG = {
-				country_event = sinkiang.3
-				hours = 6
-				random_hours = 6
+				country_event = {
+					id = sinkiang.3
+					hours = 6
+					random_hours = 6
+				}
 			}
 		}
 		if = {
@@ -55,9 +58,11 @@ country_event = {
 				autonomous_state = autonomy_associated_province
 			}
 			KUM = {
-				country_event = sinkiang.3
-				hours = 6
-				random_hours = 6
+				country_event = {
+					id = sinkiang.3
+					hours = 6
+					random_hours = 6
+				}
 			}
 		}
 
@@ -75,9 +80,11 @@ country_event = {
 				}
 			}
 			TNG = {
-				country_event = sinkiang.4
-				hours = 6
-				random_hours = 6
+				country_event = {
+					id = sinkiang.4
+					hours = 6
+					random_hours = 6
+				}
 			}
 		}
 		if = {
@@ -87,9 +94,11 @@ country_event = {
 				}
 			}
 			KUM = {
-				country_event = sinkiang.4
-				hours = 6
-				random_hours = 6
+				country_event = {
+					id = sinkiang.4
+					hours = 6
+					random_hours = 6
+				}
 			}
 		}
 	}
@@ -102,7 +111,7 @@ country_event = {
 	desc = sinkiang.3.d
 
 	picture = GFX_report_event_generic_handshake
-	is_triggered_only
+	is_triggered_only = yes
 
 	allowed = {
 		OR = {
@@ -124,7 +133,7 @@ country_event = {
 	desc = sinkiang.4.d
 
 	picture = GFX_report_event_chinese_soldiers_02
-	is_triggered_only
+	is_triggered_only = yes
 
 	allowed = {
 		OR = {

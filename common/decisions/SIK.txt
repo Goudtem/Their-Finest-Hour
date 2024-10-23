@@ -106,8 +106,12 @@ SIK_sinkiang_province_category = {
                 target = TNG
                 type = annex_everything
             }
-
-            news_event = sinkiang.1
+            
+            news_event = {
+                id = sinkiang.1
+                hours = 6
+                random_hours = 6
+            }
         }
     }
     SIK_align_with_the_kuomintang = {
@@ -130,9 +134,11 @@ SIK_sinkiang_province_category = {
 
         complete_effect = {
             CHI = {
-                country_event = sinkiang.2
-                hours = 6
-                random_hours = 6
+                country_event = {
+                    id = sinkiang.2
+                    hours = 6
+                    random_hours = 6
+                }
             }
         }
     }

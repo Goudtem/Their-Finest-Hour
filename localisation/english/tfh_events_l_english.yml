@@ -6,7 +6,7 @@
  sinkiang.2.t:0 "Sinkiang want to Re-Integrate the Republic."
  sinkiang.2.d:0 "The governor of Sinkiang, has sent us a telegram pledging total loyalty to the Kuomintang and [CHI.GetLeader]. Wanting to formally re-integrate the Republic. How should we respond?"
  sinkiang.2.a:0 "The Republic grows stronger."
- sinkiang.2.b:0 "This might strain our relation with the [SOV.GetName]"
+ sinkiang.2.b:0 "This might strain our relations with the [SOV.GetName]"
 
  sinkiang.3.t:0 "[CHI.GetName] agrees to associate with us"
  sinkiang.3.d:0 "Early this morning we received a telegram from [CHI.GetNameDef] informing us of their approval of our formal affiliation with the government in [613.GetCapitalVictoryPointName]."
