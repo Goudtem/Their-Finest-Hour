@@ -1,6 +1,7 @@
 state={
 	id=322
 	name="STATE_322"
+	impassable = yes
 
 	history={
 		owner = TIB
@@ -14,7 +15,7 @@ state={
 	}
 
 	provinces={
-		2010 2093 4994 5011 7926 8068 10755 10918 
+		2010 5011 8068 10755 
 	}
 
 	manpower=1722000
@@ -24,4 +25,5 @@ state={
 	resources={
 		tungsten=2.000
 	}
+
 }
