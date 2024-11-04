@@ -5,7 +5,6 @@ state={
 	history={
 		owner = PRC
 		add_core_of = CHI
-		add_core_of = PRC
 
 		buildings = {
 			infrastructure = 1
@@ -13,12 +12,15 @@ state={
 			arms_factory = 2
 		}
 		victory_points = {
-			4504 3 
+			4504 5 
+		}
+		victory_points = {
+			1010 3
 		}
 	}
 
 	provinces={
-		1474 1884 4192 4504 4532 7521 7549 7577 8095 10616 
+		1010 1884 4192 4325 4504 4532 7521 7549 7577 8095 10616 10763
 	}
 
 	manpower=7543200
