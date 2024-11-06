@@ -145,7 +145,7 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = rgb { 10 10 120 }
+	color = rgb { 0 63 150 }
 	color_ui = hsv { 0.18 0.3 0.9 }
 }
 CHL = {
@@ -254,6 +254,14 @@ YUN = {
 }
 SIC = {
 	color = rgb { 220 180 90 }
+	color_ui = rgb { 222 247 198 }
+}
+NCG = {
+	color = rgb { 255 190 150 }
+	color_ui = rgb { 222 247 198 }
+}
+SHA = {
+	color = rgb { 255 150 50 }
 	color_ui = rgb { 222 247 198 }
 }
 HNN = {

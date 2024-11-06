@@ -602,7 +602,8 @@
  CHI_communism_party_long:0 "Communist Party of China"
  CHI_democratic_party:0 "CDPL"
  CHI_democratic_party_long:0 "China Democratic Political League"
- CHI_fascism_party:1 "Pro-Japanese Collaborators (Influence)"
+ CHI_fascism_party:0 "YCP"
+ CHI_fascism_party_long:0 "Young China Party"
  CHI_neutrality_party:0 "KMT (Yan)"
  CHI_neutrality_party_long:0 "Kuomintang (Yan)"
 
@@ -629,6 +630,20 @@
 
  MAN_fascism_party:0 "MX"
  MAN_fascism_party_long:0 "Manzhōuguó Xiéhehuì"
+
+ NCG_democratic_party:0 "CDPL"
+ NCG_democratic_party_long:0 "China Democratic Political League"
+ NCG_neutrality_party:0 "Zhili Clique"
+ NCG_fascism_party:0 "Kwantung Army"
+ NCG_communism_party:0 "CPC"
+ NCG_communism_party_long:0 "Communist Party of China"
+
+ SHA_democratic_party:0 "CDPL"
+ SHA_democratic_party_long:0 "China Democratic Political League"
+ SHA_neutrality_party:0 "Shandong Clique"
+ SHA_fascism_party:0 "Kwantung Army"
+ SHA_communism_party:0 "CPC"
+ SHA_communism_party_long:0 "Communist Party of China"
 
  XSM_democratic_party:0 "KMT"
  XSM_democratic_party_long:0 "Kuomintang"

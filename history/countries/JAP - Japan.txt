@@ -17,3 +17,15 @@ set_popularities = {
 	communism = 10
 	neutrality = 10
 }
+
+# DIPLOMACY
+
+give_guarantee = NCG
+NCG = {
+	give_military_access = JAP
+}
+
+give_guarantee = SHA
+SHA = {
+	give_military_access = JAP
+}

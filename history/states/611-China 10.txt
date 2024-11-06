@@ -1,17 +1,14 @@
-
 state={
 	id=611
 	name="STATE_611" # South Chahar
-	manpower = 1470000
-	
-	state_category = pastoral
 
 	history={
-		owner = MEN
+		owner = NCG
+		add_core_of = NCG
 		add_core_of = MEN
 		add_core_of = MON
 		add_core_of = CHI
-		add_claim_by = PRC
+
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -22,5 +19,7 @@ state={
 		828 952 1137 1489 1590 6904 9776 10397 
 	}
 
+	manpower = 1470000
+	state_category = pastoral
 	local_supplies=0.0 
 }

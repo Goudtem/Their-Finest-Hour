@@ -19,6 +19,10 @@ set_popularities = {
 	neutrality = 85
 }
 
+add_ideas = {
+	CHI_treaty_of_hsinking
+}
+
 # DIPLOMACY
 
 set_autonomy = {
@@ -53,3 +57,5 @@ set_autonomy = {
 	target = MEN
 	autonomous_state = autonomy_associated_province
 }
+
+give_guarantee = NCG

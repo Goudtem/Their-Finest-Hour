@@ -1,2 +1,34 @@
 ideas = {
+    country = {
+        CHI_treaty_of_hsinking  = {
+			picture = jap_intervene_in_china
+			allowed = {
+				original_tag = CHI
+			}
+            available = {
+                country_exists = JAP
+                NOT = {
+                    has_war_with = JAP
+                }
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+                stability_factor = -0.15
+                war_support_weekly = 0.005
+                consumer_goods_factor = 0.1
+                production_speed_buildings_factor = 0.15
+                opinion_gain_monthly_factor = -0.25
+                experience_gain_army = 0.05
+                experience_gain_army_factor = -0.25
+                local_resources_factor = 0.1
+			}
+            targeted_modifier = {
+                tag = JAP
+                cic_to_target_factor = 0.10
+            }
+        }
+    }
 }
