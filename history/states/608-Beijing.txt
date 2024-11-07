@@ -1,6 +1,6 @@
 state={
 	id=608
-	name="STATE_608"
+	name="STATE_608" # Tianjin
 
 	history={
 		owner = NCG
@@ -8,27 +8,25 @@ state={
 		add_core_of = CHI
 
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 2
-			air_base = 3
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+
 			10068 = {
 				naval_base = 2
 			}
 		}
 
 		victory_points = {
-			9843 20
-		}
-		victory_points = {
-			10068 1 
+			10068 3 
 		}
 	}
 
 	provinces={
-		1134 4137 4140 6828 9843 9969 10068 11761 12026 
+		10068
 	}
 
-	manpower = 9648400
-	state_category = large_city
+	manpower = 1500000
+	state_category = town
 	local_supplies=1.0 
 }

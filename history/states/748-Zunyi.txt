@@ -7,13 +7,18 @@ state={
 		add_core_of = SIC
 		add_core_of = CHI
 
+		set_demilitarized_zone = yes
+
 		buildings = {
 			infrastructure = 1
+		}
+		victory_points = {
+			1893 1
 		}
 	}
 
 	provinces={
-		4141 4431 9939 11972 
+		1893 4141 9939 10304
 	}
 
 	manpower=1500000

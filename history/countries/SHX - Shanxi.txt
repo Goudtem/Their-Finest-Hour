@@ -1,4 +1,4 @@
-﻿capital = 744
+﻿capital = 622
 oob = "SHX_1936"
 
 set_research_slots = 3
@@ -17,4 +17,11 @@ set_popularities = {
 	fascism = 0
 	communism = 0
 	neutrality = 100
+}
+
+# DIPLOMACY
+
+set_autonomy = {
+	target = MEN
+	autonomous_state = autonomy_associated_province
 }

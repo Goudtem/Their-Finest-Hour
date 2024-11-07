@@ -256,6 +256,14 @@ SIC = {
 	color = rgb { 220 180 90 }
 	color_ui = rgb { 222 247 198 }
 }
+XIK = {
+	color = rgb { 30 160 70 }
+	color_ui = rgb { 222 247 198 }
+}
+SCS = {
+	color = rgb { 20 30 70 }
+	color_ui = rgb { 222 247 198 }
+}
 NCG = {
 	color = rgb { 255 190 150 }
 	color_ui = rgb { 222 247 198 }

@@ -695,6 +695,20 @@
  SIC_communism_party:0 "CPC"
  SIC_communism_party_long:0 "Communist Party of China"
 
+ XIK_democratic_party:0 "KMT"
+ XIK_democratic_party_long:0 "Kuomintang"
+ XIK_neutrality_party:0 "KMT (Deng)"
+ XIK_neutrality_party_long:0 "Kuomintang (Deng)"
+ XIK_communism_party:0 "CPC"
+ XIK_communism_party_long:0 "Communist Party of China"
+
+ SCS_democratic_party:0 "KMT"
+ SCS_democratic_party_long:0 "Kuomintang"
+ SCS_neutrality_party:0 "KMT (Tian)"
+ SCS_neutrality_party_long:0 "Kuomintang (Tian)"
+ SCS_communism_party:0 "CPC"
+ SCS_communism_party_long:0 "Communist Party of China"
+
  HNN_democratic_party:0 "KMT"
  HNN_democratic_party_long:0 "Kuomintang"
  HNN_neutrality_party:0 "KMT (He)"

@@ -58,6 +58,8 @@ autonomy_state = {
             original_tag = GDC
             original_tag = TNG
 			original_tag = KUM
+			original_tag = XIK
+			original_tag = SCS
         }
 	}
 	
