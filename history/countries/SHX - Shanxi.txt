@@ -23,5 +23,5 @@ set_popularities = {
 
 set_autonomy = {
 	target = MEN
-	autonomous_state = autonomy_associated_province
+	autonomous_state = autonomy_integrated_province
 }
