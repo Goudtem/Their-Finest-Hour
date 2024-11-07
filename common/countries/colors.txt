@@ -293,7 +293,7 @@ TAN = {
 	color_ui = rgb { 222 247 198 }
 }
 USA = {
-	color = rgb { 32 45 97 }
+	color = rgb { 30 60 160 }
 	color_ui = rgb { 87 160 255 }
 }
 MON = {
