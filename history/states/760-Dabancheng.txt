@@ -1,6 +1,6 @@
 state={
 	id=760
-	name="STATE_760"
+	name="STATE_760" # Hami
 	provinces={
 		1838 4704 4843 7732 10839 12524 12598 12671 
 	}
@@ -8,8 +8,10 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={
-		owner = KUM
+		owner = SIK
 		add_core_of = KUM
+		add_core_of = SIK
+		add_claim_by = TNG
 		add_claim_by = CHI
 		add_claim_by = PRC
 		buildings = {

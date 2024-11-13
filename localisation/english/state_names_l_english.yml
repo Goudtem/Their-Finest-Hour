@@ -769,7 +769,7 @@
  STATE_757:0 "Shigatse"
  STATE_758:0 "Ngari"
  STATE_759:1 "Kunlun Shan"
- STATE_760:0 "Kumul"
+ STATE_760:0 "Hami"
  STATE_761:0 "Hulunbuir"
  STATE_762:1 "Katowice"
  STATE_763:0 "Königsberg"
@@ -986,4 +986,4 @@
  STATE_968: "Amazon" # impassables
  STATE_969: "Rio Branco"
  
-
+# New States

@@ -971,3 +971,7 @@ QUE = {
 	color = rgb { 0 102 255 }
 	color_ui = rgb { 0 31 77 }
 }
+FJH = {
+	color = rgb { 20 52 164 }
+	color_ui = rgb { 20 52 164 }
+}

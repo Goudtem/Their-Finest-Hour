@@ -1,10 +1,10 @@
-﻿capital = 617
+capital = 595
 oob = "SIK_1936"
 
 set_research_slots = 3
-set_stability = 0.5
-set_war_support = 0.35
-set_convoys = 10
+set_stability = 0.25
+set_war_support = 0.55
+set_convoys = 20
 
 set_politics = {
 	ruling_party = neutrality
@@ -15,13 +15,6 @@ set_politics = {
 set_popularities = {
 	democratic = 0
 	fascism = 0
-	communism = 15
-	neutrality = 85
-}
-
-# DIPLOMACY
-
-set_autonomy = {
-	target = TNG
-	autonomous_state = autonomy_associated_province
+	communism = 45
+	neutrality = 55
 }
