@@ -46,6 +46,12 @@ autonomy_state = {
 			limit = { has_dlc = "Death or Dishonor" }
 			OVERLORD = { NOT = { has_government = fascism } }
 		}
+
+		NOT = {
+			has_autonomy_state = autonomy_associated_province
+			has_autonomy_state = autonomy_autonomous_province
+			has_autonomy_state = autonomy_integrated_province
+		}
 	}
 
 	#ROOT is puppet - FROM is potential OVERLORD

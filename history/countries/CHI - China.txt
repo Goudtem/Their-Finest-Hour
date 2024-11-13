@@ -50,16 +50,21 @@ set_autonomy = {
 	autonomous_state = autonomy_associated_province
 }
 set_autonomy = {
-	target = SCS
-	autonomous_state = autonomy_integrated_province
-}
-set_autonomy = {
 	target = HNN
 	autonomous_state = autonomy_associated_province
 }
 set_autonomy = {
 	target = GDC
 	autonomous_state = autonomy_associated_province
+}
+
+set_autonomy = {
+	target = SCS
+	autonomous_state = autonomy_integrated_province
+}
+set_autonomy = {
+	target = FJH
+	autonomous_state = autonomy_integrated_province
 }
 
 give_guarantee = NCG

@@ -48,19 +48,17 @@ autonomy_state = {
 			limit = { has_dlc = "Death or Dishonor" }
 			OVERLORD = { NOT = { has_government = fascism } }
 		}
+
+		NOT = {
+			has_autonomy_state = autonomy_associated_province
+			has_autonomy_state = autonomy_autonomous_province
+			has_autonomy_state = autonomy_integrated_province
+		}
 	}
 	
 	can_take_level = {
-		if = {
-			limit = {
-				original_tag = RAJ			
-			}
-			has_completed_focus = RAJ_cripps_mission
-		}
-		#trigger here
 	}
 
 	can_lose_level = {
-		#trigger here
 	}
 }

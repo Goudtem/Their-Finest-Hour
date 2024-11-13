@@ -62,6 +62,12 @@ autonomy_state = {
 			}
 			OVERLORD = { not = { tag = JAP } }
 		}
+
+		NOT = {
+			has_autonomy_state = autonomy_associated_province
+			has_autonomy_state = autonomy_autonomous_province
+			has_autonomy_state = autonomy_integrated_province
+		}
 	}
 	
 	can_take_level = {

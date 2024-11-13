@@ -4,7 +4,7 @@ autonomy_state = {
 	is_puppet = yes
     use_overlord_color = yes
 	
-	min_freedom_level = 0.3
+	min_freedom_level = 0.1
 	
 	manpower_influence = 1.0
 	
@@ -60,6 +60,7 @@ autonomy_state = {
 			original_tag = KUM
 			original_tag = XIK
 			original_tag = SCS
+			original_tag = FJH
         }
 	}
 	
