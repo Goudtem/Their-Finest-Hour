@@ -9,19 +9,25 @@ state={
 
 	history={
 		owner = TUR
+		add_core_of = TUR
+
 		victory_points = {
 			3870 5 
 		}
+		victory_points = {
+			6813 3
+		}
+		victory_points = {
+			7620 10
+		}
+
 		buildings = {
 			infrastructure = 2
-
 		}
-		add_core_of = TUR
-
 	}
 
-	provinces={
-		886 921 961 3870 3921 6888 6956 6977 9830 
+	provinces = {
+		886 921 961 3870 3889 3921 6813 6888 6977 7620 9830 9912
 	}
 
 	local_supplies=6.0 
