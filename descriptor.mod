@@ -1,4 +1,4 @@
-version="1.14"
+version="1.15"
 tags={
 	"Alternative History"
 	"Gameplay"
@@ -9,4 +9,4 @@ tags={
 	"Ideologies"
 }
 name="Their Finest Hour"
-supported_version="1.14.7"
+supported_version="1.15.0"
